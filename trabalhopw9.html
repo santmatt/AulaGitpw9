@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display: Block, Inline, Inline-Block e None</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      text-align: center;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    /* Seção Block */
+    .block-container {
+      background-color: teal; /* Cor do contêiner verde */
+      padding: 10px;
+      width: 150px;
+      border-radius: 5px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .block {
+      background-color: white; /* Quadrados brancos */
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+    }
+
+    /* Seção Inline */
+    .inline-container {
+      background-color: teal; /* Cor do contêiner verde */
+      padding: 10px;
+      display: inline-block;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .inline {
+      display: inline-block;
+      background-color: white; /* Quadrados brancos */
+      margin: 2px;
+    }
+
+    .inline:nth-child(1) {
+      width: 50px;
+      height: 20px;
+    }
+
+    .inline:nth-child(2) {
+      width: 40px;
+      height: 20px;
+    }
+
+    .inline:nth-child(3) {
+      width: 30px;
+      height: 20px;
+    }
+
+    .inline:nth-child(4) {
+      width: 60px;
+      height: 20px;
+    }
+
+    /* Seção Inline-Block */
+    .inline-block-container {
+      background-color: teal; /* Cor do contêiner verde */
+      padding: 10px;
+      display: inline-block;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: white; /* Quadrados brancos */
+      margin: 2px;
+    }
+
+    .inline-block:nth-child(1) {
+      width: 40px;
+      height: 40px;
+    }
+
+    .inline-block:nth-child(2) {
+      width: 60px;
+      height: 40px;
+    }
+
+    .inline-block:nth-child(3) {
+      width: 50px;
+      height: 40px;
+    }
+
+    .inline-block:nth-child(4) {
+      width: 30px;
+      height: 40px;
+    }
+
+    /* Seção None */
+    .none-container {
+      background-color: teal; /* Cor do contêiner verde */
+      padding: 10px;
+      width: 150px;
+      border-radius: 5px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .none {
+      display: none; /* Elemento invisível */
+      background-color: white;
+      width: 100px;
+      height: 30px;
+      margin: 5px auto;
+    }
+
+    .none-text {
+      font-size: 14px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Display: Block, Inline, Inline-Block e None</h1>
+  <div class="container">
+    <!-- Seção Block -->
+    <div class="section">
+      <h2>Block</h2>
+      <div class="block-container">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+    </div>
+
+    <!-- Seção Inline -->
+    <div class="section">
+      <h2>Inline</h2>
+      <div class="inline-container">
+        <span class="inline"></span>
+        <span class="inline"></span>
+        <span class="inline"></span>
+        <span class="inline"></span>
+      </div>
+    </div>
+
+    <!-- Seção Inline-Block -->
+    <div class="section">
+      <h2>Inline-Block</h2>
+      <div class="inline-block-container">
+        <div class="inline-block"></div>
+        <div class="inline-block"></div>
+        <div class="inline-block"></div>
+        <div class="inline-block"></div>
+      </div>
+    </div>
+
+    <!-- Seção None -->
+    <div class="section">
+      <h2>None</h2>
+      <div class="none-container">
+        <div class="none"></div> <!-- Elemento invisível -->
+        <p class="none-text"></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
